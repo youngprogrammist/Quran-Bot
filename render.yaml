@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: quran-bot
+    env: python
+    plan: free
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: API_TOKEN
+        value: 8180198467:AAE3R0woUcTCGQ8Fx3wnUmdkyA2sdujWZJY
